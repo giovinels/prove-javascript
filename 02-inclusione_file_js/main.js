@@ -1,6 +1,6 @@
 
 function printCiao() {
-    return "ciao"
+    return "ciao";
 }
 
 function provaOperatoriDiUgugaglianza() {

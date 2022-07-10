@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <table class="table table-light table-striped w-75 m-auto">
+        <p>
+        <h3 id="h3orari">Orari di apertura:</h3>
+        </p>
+        <thead>
+        <tr>
+            <th id="Nome">Nome</th>
+            <th id="Cognome">Cognome</th>
+            <th id="Data di nascita">Data di nascita</th>
+        </tr>
+        <tbody>
+        </tbody>
+        <script>
+            var gianfranco = creaAnimato("Gianfranco", "Rossi", "2004-7-12");
+
+            document.write("<tr>");
+            document.write("<td headers=\"Nome\">" + gianfranco.nome + "</td>");
+            document.write("<td headers=\"Cognome\">" + gianfranco.cognome + "</td>");
+            document.write("<td headers=\"Data di nascita\">" + gianfranco.nascita + "</td>");
+            document.write("</tr>");
+        </script>
+        </thead>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
