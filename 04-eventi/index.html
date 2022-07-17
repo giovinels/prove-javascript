@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestione di eventi</title>
+    <script type="text/javascript" src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <script>
+        animati.push(creaAnimato("Pierelia", "Verde", "2014-7-12"));
+        animati.push(creaAnimato("Gaston", "Ponzi", "2022-4-4"));
+        animati.push(creaAnimato("Ludvig", "Blutg", "2014-6-12"));
+    </script>
+    <table id="laMiaTabella" class="table table-light table-striped w-75 m-auto">
+        <p>
+        <h3 id="h3orari">Orari di apertura:</h3>
+        </p>
+        <thead>
+        <tr>
+            <th id="Nome">Nome</th>
+            <th id="Cognome">Cognome</th>
+            <th id="Data di nascita">Data di nascita</th>
+        </tr>
+        <tbody>
+        </tbody>
+        <script>
+            for(let i = 0; i < animati.length; i++) {
+                inserisciAnimato(animati[i].nome, animati[i].cognome, animati[i].nascita);
+            }
+        </script>
+        </thead>
+    </table>
+    <!--
+    Purtroppo non vediamo la tabella aggiungere altri gianfranco (funzioni sotto) perchè senza ajax non riusciamo
+    a ricaricare dinamicamente la tabella che mostra gli elementi dell'array "animati"
+    -->
+    <input type="button" value="Aggiungi animato" onclick="aggiungiGianfranco()"/>
+    <input type="button" value="Ricarica la pagina" onclick="javascript:location.reload()"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
